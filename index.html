@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktikum Perbedaan Python dan JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .box {
+            border: 1px solid #333;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+        }
+        button {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Praktikum: Perbedaan Python dan JavaScript</h1>
+<p>Output program langsung ditampilkan di halaman web.</p>
+
+<hr>
+
+<h2>1. Variabel & Output</h2>
+<button onclick="contohVariabel()">Jalankan</button>
+<div id="out1" class="box"></div>
+
+<script>
+/*
+========================================
+1. VARIABEL & OUTPUT
+Python:
+nama = "Andi"
+umur = 20
+print(nama, umur)
+========================================
+*/
+function contohVariabel() {
+    let nama = "Andi";
+    let umur = 20;
+
+    document.getElementById("out1").innerHTML =
+        "Nama: " + nama + "<br>Umur: " + umur;
+}
+
+
+</script>
+
+</body>
+</html>
